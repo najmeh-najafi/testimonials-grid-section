@@ -1,0 +1,180 @@
+
+    @font-face {
+        font-family: "BarlowSemiCondensed";
+        src: url(fonts/BarlowSemiCondensed-Medium.ttf);
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "BarlowSemiCondensed";
+        src: url(fonts/BarlowSemiCondensed-SemiBold.ttf);
+        font-weight: 600;
+      }
+  
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,body{
+        min-height: 100vh;
+        min-width: 320px;
+        background-color: #ECF2F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "BarlowSemiCondensed",sans-serif;
+      }
+      q::before,q::after{
+      content: " ";
+      }
+      .testimonials-container{
+        width: 1110px;
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: auto auto;
+        grid-auto-rows: auto;
+        column-gap: 30px;
+        row-gap: 24px;
+        margin: 20px 0;
+      }
+      
+      .horizental{
+        grid-column: auto/span 2;
+      }
+      .testimonial{
+           padding: 26px 32px 32px;
+           border-radius: 8px;
+      }
+      .testimonial--one{
+      
+      background: url(images/bg-pattern-quotation.svg) #733FC8 no-repeat;
+      background-position: right 80px top;
+      
+      }
+      .testimonial--two{
+      background-color: #48556A;
+      }
+      .testimonial--three{
+      background-color: #FFFFFF;
+      grid-row: auto/span 2;
+      }
+      .testimonial--four{
+      background-color: #FFFFFF;
+      }
+      .testimonial--five{
+      background-color: #19202D;
+      }
+      .testimonial__header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      .testimonial__image-wrapper{
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 17px;
+      }
+      .testimonial__image-wrapper.borderd{
+         border: 2px solid #A775F1;
+      }    
+      .testimonial__image{
+        width: 100%;
+        height: 100%;
+         object-fit: cover;
+      }
+      .testimonial--light .testimonial__author,
+      .testimonial--light .testimonial__body {
+        color: white;
+      }
+      .testimonial--dark .testimonial__author,
+      .testimonial--dark .testimonial__body {
+        color: #48556A;
+      }
+      .testimonial--one .testimonial__body-desc{
+        color: #CFCFCF;
+      }
+      .testimonial__author span{
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: capitalize;
+        opacity: 50%;
+      }
+      .testimonial__author-name{
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+      .testimonial__body-title{
+        display: block;
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      .testimonial__body-desc{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        opacity: 70%;
+      }
+    
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+  
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @media only screen and (max-width:1200px){
+        .testimonials-container{
+          width: 960px;
+          grid-template-columns: repeat(3,1fr);
+          margin: 50px 0;
+        }
+        .testimonial--three{
+          order:5;
+          grid-column: 1/-1;
+        }
+      }
+      @media only screen and (max-width:992px){
+        .testimonials-container{
+          width: 880px;
+          grid-template-columns: repeat(3,1fr);
+        }
+      }
+      @media only screen and (max-width:900px){
+        .testimonials-container{
+          width: 800px;
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+      @media only screen and (max-width:850px){
+        .testimonials-container{
+          width:750px;
+        }
+      }
+      @media only screen and (max-width:760px){
+        .testimonials-container{
+          width:650px;
+        }
+      }
+      @media only screen and (max-width:660px){
+        .testimonials-container{
+          width:87%;
+          grid-template-columns: 1fr;
+        }
+        .horizental{
+          grid-column: auto;
+        }
+        .testimonial--one{
+          background-position: right 24px top;
+        }
+      }
+    
