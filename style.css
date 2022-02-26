@@ -28,6 +28,12 @@
       q::before,q::after{
       content: " ";
       }
+      blockquote::before{
+        content:"“";
+      }
+      blockquote::after{
+        content: "”";
+      }
       .testimonials-container{
         width: 1110px;
         display: grid;
