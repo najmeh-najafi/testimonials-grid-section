@@ -66,7 +66,7 @@ While doing this project, I became familiar with css gride and used it to create
 
 ### Useful resources
 
-- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
 
 ## Author
 
